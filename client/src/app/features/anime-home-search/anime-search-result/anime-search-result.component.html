@@ -1,0 +1,29 @@
+<div class="container">
+  <div *ngFor="let result of searchResult" class="card">
+    <a [routerLink]="['/details', result.id]">
+      <img [src]="result.posterUrl ? result.posterUrl : '/placeHolderPoster.png'">
+    </a>
+    <div class="content">
+      <a [routerLink]="['/details', result.id]">
+        <h2>{{result.title}}</h2>
+      </a>
+      <div class="detail">
+        <span class="label">Production type:</span>
+        <span class="info">{{result.productionType| enumTextValue: productionTypeEnum }}</span>
+      </div>
+      <div class="detail">
+        <span class="label">Status:</span>
+        <span>{{ result.status | enumTextValue: animeStatusEnum }}</span>
+      </div>
+      <div class="detail">
+        <span class="label">Episodes:</span>
+        <span>{{ result.episodesCount }}</span>
+      </div>
+      <div class="detail">
+        <span class="label">Aired:</span>
+        <span>{{ result.airDate | date: 'longDate' }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+

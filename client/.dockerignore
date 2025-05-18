@@ -1,0 +1,15 @@
+.idea/
+.angular/
+
+# Ignore Visual Studio files
+.vscode/
+.vs/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+node_modules
+.gitignore
+*.md
+dist

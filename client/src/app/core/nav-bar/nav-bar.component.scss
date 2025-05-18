@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--top-navbar-background-color);
+    height: 60px;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+
+}
+
+.nav-logo {
+    color: var(--white-text-color);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-link {
+    color: var(--white-text-color);
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.nav-link-SignUp {
+    margin-left: 100px;
+}

@@ -1,0 +1,31 @@
+<app-custom-cards
+  [headerTitle]="'Related anime'"
+  [arrayToLoop]="animeDetails?.relatedAnime"
+  [picture]="'pictureUrl'"
+  [titleOrFirstName]="'relatedAnimeTitle'"
+  [subtitleEnum]="productionTypeEnum"
+  [subtitle]="'relatedAnimeProductionType'"
+  [primaryMetadataEnum]="animeRelationTypeEnum"
+  [primaryMetadata]="'relationType'"
+></app-custom-cards>
+
+<app-custom-cards
+  [headerTitle]="'Characters'"
+  [arrayToLoop]="animeDetails?.characters"
+  [picture]="'pictureUrl'"
+  [titleOrFirstName]="'firstName'"
+  [lastName]="'lastName'"
+  [subtitleEnum]="animeCharacterRole"
+  [subtitle]="'role'"
+></app-custom-cards>
+
+<app-custom-cards
+  [headerTitle]="'Staff'"
+  [arrayToLoop]="animeDetails?.staff"
+  [picture]="'pictureUrl'"
+  [titleOrFirstName]="'displayName'"
+  [subtitleEnum]="staffPosition"
+  [subtitle]="'positionType'"
+></app-custom-cards>
+
+

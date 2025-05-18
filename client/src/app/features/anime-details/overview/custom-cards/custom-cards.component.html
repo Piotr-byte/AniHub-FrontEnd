@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>{{headerTitle}}</h1>
+  <div class="cards-container">
+    <div *ngFor="let item of  arrayToLoop" class="card">
+      <a  routerLink="" > <img src="{{item[picture]}}" alt=""></a>
+      <div class="content">
+        <a routerLink="">
+          <p class="title">
+            {{ item[titleOrFirstName] + (item[lastName] ? ' ' + item[lastName] : '') }}
+          </p>
+          <p class="subtitle">{{item[subtitle] | enumTextValue: subtitleEnum}}</p>
+        </a>
+        <div class="metaData">
+          <p>{{item[primaryMetadata] | enumTextValue: primaryMetadataEnum}} &nbsp;&nbsp;</p>
+          <p>{{item[secondaryMetadata] | enumTextValue: secondaryMetadataEnum}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

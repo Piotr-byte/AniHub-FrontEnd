@@ -1,0 +1,5 @@
+<form [formGroup]="form" >
+  <input formControlName="email" placeholder="Email">
+  <input formControlName="password" placeholder="Password">
+  <app-custom-button text="Login" size="middle-button" (buttonClick)="onSubmit()" ></app-custom-button>
+</form>

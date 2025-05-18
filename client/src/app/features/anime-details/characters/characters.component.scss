@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1290px;
+  padding-top: 20px;
+  margin: auto;
+  font-family: "Roboto",sans-serif;
+}
+
+.character-card{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.voice-actor {
+  display: flex;
+}
+
+.character{
+  display: flex;
+}
+
+h2{
+  font-size: 19px;
+  font-weight: 600;
+}
+
+h3{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color:var(--light-grey-text-color);
+}
+
+.content{
+  padding-left: 10px;
+  padding-right: 10px;
+}

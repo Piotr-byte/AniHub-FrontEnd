@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="title-subtitle">
+    <h1>Find Your Next Favorite Anime</h1>
+    <h2>Search from a vast collection of anime by entering the name or using filters!</h2>
+  </div>
+  <div class="search-form">
+    <input class="search-bar"  type="text" [(ngModel)]="searchText" (keyup)="goToResult()"  placeholder = "Search by Name..." >
+    <div class="advance-search-button">
+      <app-custom-button size="small-button" type="secondary" text="Advanced Search"></app-custom-button>
+    </div>
+  </div>
+  <div class="nav">
+    <a routerLink = "">Trending Now</a>
+    <a routerLink = "">Seasonal Anime</a>
+    <a routerLink = "">Top 100</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+

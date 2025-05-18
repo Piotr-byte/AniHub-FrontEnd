@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngFor="let character of animeCharacterWithVoiceActor" class="character-card">
+    <div class="character">
+      <img src = "{{character.animeCharacter.pictureUrl}}" width="90" height="125">
+      <div class="content">
+        <h2>{{character.animeCharacter.firstName + ' ' + character.animeCharacter.lastName}}</h2>
+        <h3>{{character.animeCharacter.role | enumTextValue: animeCharacterRole}}</h3>
+      </div>
+    </div>
+    <div class="voice-actor">
+      <div class="content">
+        <h2>{{character.voiceActor.displayName}}</h2>
+        <h3>{{character.voiceActor.voiceActingLanguage | enumTextValue: voiceActingLanguage}}</h3>
+      </div>
+      <img src = "{{character.voiceActor.pictureUrl}}" width="90" height="125">
+    </div>
+  </div>
+</div>
